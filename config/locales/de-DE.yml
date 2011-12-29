@@ -1,4 +1,6 @@
 de-DE:
+
+  date.order: [:day, :month, :year]
   authorizations:
     create:
       success_existing_user: "Successfully added %{provider} authentication"
