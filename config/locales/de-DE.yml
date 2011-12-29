@@ -1,4 +1,28 @@
 de-DE:
+  authorizations:
+    create:
+      success_existing_user: "Successfully added %{provider} authentication"
+      success_message: "Welcome %{provider} user. You are logged in."
+    failure:
+      notice: "Sorry, You didn't authorize"
+    destroy:
+      notice: "Successfully deleted %{provider} authentication."
+  sessions:
+    new:
+      omniauth:
+        header: "Sign in with:"
+        button_alt: "Sign in with your %{provider} account"
+  users:
+    edit_account:
+      omniauth:
+        confirm_remove: "Are you sure you want to remove %{provider} authentication option?"
+        title_remove: "Remove %{provider} authentication option?"
+  tags:
+    show:
+      users: Benutzer
+  sitemaps:
+    index:
+      users: Benutzer
   date:
     formats:
       published_date: "%d.%m.%Y"
@@ -6,8 +30,10 @@ de-DE:
 
   time:
     formats:
-      published_date: "%d.%m.%Y"      
-      short_date: "%d.%m.%y"
+      published_date: "%d.%m.%Y"
+      short_published_date: "%d.%m.%Y"
+      literal_date: "%d.%m.%Y"
+      short_literal_date: "%d.%m.%Y"
       time_ago: "%H:%M"
 
   activerecord:
