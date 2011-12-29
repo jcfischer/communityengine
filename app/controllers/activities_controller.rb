@@ -1,5 +1,5 @@
 class ActivitiesController < BaseController
-  before_filter :login_required,  :except => :index
+  before_filter :login_required
   before_filter :find_user,       :only => :network
   
   before_filter :require_current_user,            :except => [:index, :destroy]

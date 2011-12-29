@@ -1,6 +1,7 @@
 class SitemapController < BaseController
   layout false
   caches_action :index
+  before_filter :login_required
 
   def index
     @users = User.active.select('id, login, updated_at, login_slug')

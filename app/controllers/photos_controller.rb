@@ -2,7 +2,7 @@
 
 class PhotosController < BaseController
   include Viewable  
-  before_filter :login_required, :only => [:new, :edit, :update, :destroy, :create, :swfupload]
+  before_filter :login_required
   before_filter :find_user, :only => [:new, :edit, :index, :show]
   before_filter :require_current_user, :only => [:new, :edit, :update, :destroy]
 

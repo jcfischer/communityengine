@@ -1,6 +1,6 @@
 class AlbumsController < BaseController
   include Viewable
-  before_filter :login_required, :except => [:show]
+  before_filter :login_required
   before_filter :find_user, :only => [:new, :edit, :index]
   before_filter :require_current_user, :only => [:new, :edit, :update, :destroy, :create]
 

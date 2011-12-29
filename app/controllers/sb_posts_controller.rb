@@ -1,6 +1,6 @@
 class SbPostsController < BaseController
   before_filter :find_post,      :except => [:index, :monitored, :search, :new, :create]
-  before_filter :login_required, :except => [:index, :search, :show, :monitored, :create]
+  before_filter :login_required
 
   before_filter :only => [:create] do |controller|
     login_required unless configatron.allow_anonymous_forum_posting

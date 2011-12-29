@@ -1,5 +1,5 @@
 class CommentsController < BaseController
-  before_filter :login_required, :except => [:index, :unsubscribe]
+  before_filter :login_required
   before_filter :admin_or_moderator_required, :only => [:delete_selected, :edit, :update]
 
   if configatron.allow_anonymous_commenting

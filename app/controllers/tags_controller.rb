@@ -1,5 +1,5 @@
 class TagsController < BaseController
-  before_filter :login_required, :only => [:manage, :edit, :update, :destroy]
+  before_filter :login_required
   before_filter :admin_required, :only => [:manage, :edit, :update, :destroy]
   skip_before_filter :verify_authenticity_token, :only => 'auto_complete_for_tag_name'
 
