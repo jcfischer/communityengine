@@ -1,6 +1,5 @@
 de-DE:
 
-  date.order: [:day, :month, :year]
   authorizations:
     create:
       success_existing_user: "Successfully added %{provider} authentication"
@@ -26,6 +25,7 @@ de-DE:
     index:
       users: Benutzer
   date:
+    order: [:day, :month, :year]
     formats:
       published_date: "%d.%m.%Y"
       date_ago: "%b %Y"
@@ -187,7 +187,7 @@ de-DE:
   #en: browse_content_by_tags: Browse content by tags
   browse_content_by_tags: Inhalt nach Tags anzeigen
   #en: by: by
-  by: von
+  by: "von %{login}"
   #en: by_looking_at_the: by looking at the
   by_looking_at_the: durch das Betrachten
   #en: cancel: Cancel
@@ -299,7 +299,10 @@ de-DE:
   #en: date_published: Date Published
   date_published: "Veröffentlichungsdatum"
   #en: days_ago: days ago
-  days_ago: Tage zuvor
+  days_ago:
+    one: "vor einem Tag"
+    other: "vor %{count} Tagen"
+
   #en: delete: Delete
   delete: Löschen
   #en: delete_selected: Delete selected
@@ -515,7 +518,9 @@ de-DE:
   #en: homepage_features: Homepage Features
   homepage_features: Homepage Features
   #en: hours_ago: hours ago
-  hours_ago: Stunden zuvor
+  hours_ago:
+    one: "vor einer Stunde"
+    other: "vor %{count} Stunden"
   #en: how_do_i_do_that: How do I do that?
   how_do_i_do_that: Wie mach ich das?
   #en: html: HTML
@@ -643,7 +648,9 @@ de-DE:
   #en: metro_area_was_successfully_created: MetroArea was successfully created.
   metro_area_was_successfully_created: MetroArea wurde erfolgreich angelegt.
   #en: minutes_ago: minutes ago
-  minutes_ago: Minuten zuvor
+  minutes_ago:
+    one: "vor einer Minute"
+    other: "vor %{count} Minuten"
   #en: moderator: Moderator
   moderator: Moderator
   #en: moderators: Moderators
